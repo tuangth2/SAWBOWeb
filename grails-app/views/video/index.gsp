@@ -23,16 +23,16 @@
 			<table>
 			<thead>
 					<tr>
-					
-						<g:sortableColumn property="country" title="${message(code: 'video.country.label', default: 'Country')}" />
-					
-						<g:sortableColumn property="description" title="${message(code: 'video.description.label', default: 'Description')}" />
-					
+
+                        <g:sortableColumn property="title" title="${message(code: 'video.title.label', default: 'Title')}" />
+
+                        <g:sortableColumn property="description" title="${message(code: 'video.description.label', default: 'Description')}" />
+
+                        <g:sortableColumn property="country" title="${message(code: 'video.country.label', default: 'Country')}" />
+
 						<g:sortableColumn property="language" title="${message(code: 'video.language.label', default: 'Language')}" />
 					
 						<g:sortableColumn property="postDate" title="${message(code: 'video.postDate.label', default: 'Post Date')}" />
-					
-						<g:sortableColumn property="title" title="${message(code: 'video.title.label', default: 'Title')}" />
 					
 						<g:sortableColumn property="urlLink" title="${message(code: 'video.urlLink.label', default: 'Url Link')}" />
 					
@@ -41,16 +41,16 @@
 				<tbody>
 				<g:each in="${videoInstanceList}" status="i" var="videoInstance">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
-					
-						<td><g:link action="show" id="${videoInstance.id}">${fieldValue(bean: videoInstance, field: "country")}</g:link></td>
-					
-						<td>${fieldValue(bean: videoInstance, field: "description")}</td>
+
+                        <td><g:link action="show" id="${videoInstance.id}">${fieldValue(bean: videoInstance, field: "title")}</g:link></td>
+
+                        <td>${fieldValue(bean: videoInstance, field: "description")}</td>
+
+                        <td>${fieldValue(bean: videoInstance, field: "country")}</td>
 					
 						<td>${fieldValue(bean: videoInstance, field: "language")}</td>
 					
 						<td><g:formatDate date="${videoInstance.postDate}" /></td>
-					
-						<td>${fieldValue(bean: videoInstance, field: "title")}</td>
 					
 						<td>${fieldValue(bean: videoInstance, field: "urlLink")}</td>
 					

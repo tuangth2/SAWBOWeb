@@ -1,6 +1,23 @@
 <%@ page import="sawboweb.Video" %>
 
 
+<div class="fieldcontain ${hasErrors(bean: videoInstance, field: 'title', 'error')} required">
+    <label for="title">
+        <g:message code="video.title.label" default="Title" />
+        <span class="required-indicator">*</span>
+    </label>
+    <g:textField name="title" required="" value="${videoInstance?.title}"/>
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: videoInstance, field: 'description', 'error')} required">
+    <label for="description">
+        <g:message code="video.description.label" default="Description" />
+        <span class="required-indicator">*</span>
+    </label>
+    <g:textField name="description" required="" value="${videoInstance?.description}"/>
+
+</div>
 
 <div class="fieldcontain ${hasErrors(bean: videoInstance, field: 'country', 'error')} required">
 	<label for="country">
@@ -8,15 +25,6 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:textField name="country" required="" value="${videoInstance?.country}"/>
-
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: videoInstance, field: 'description', 'error')} required">
-	<label for="description">
-		<g:message code="video.description.label" default="Description" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:textField name="description" required="" value="${videoInstance?.description}"/>
 
 </div>
 
@@ -35,15 +43,6 @@
 		<span class="required-indicator">*</span>
 	</label>
 	<g:datePicker name="postDate" precision="day"  value="${videoInstance?.postDate}"  />
-
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: videoInstance, field: 'title', 'error')} required">
-	<label for="title">
-		<g:message code="video.title.label" default="Title" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:textField name="title" required="" value="${videoInstance?.title}"/>
 
 </div>
 

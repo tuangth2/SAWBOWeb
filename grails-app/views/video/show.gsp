@@ -22,21 +22,30 @@
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
 			<ol class="property-list video">
-			
+
+                <g:if test="${videoInstance?.title}">
+                    <li class="fieldcontain">
+                        <span id="title-label" class="property-label"><g:message code="video.title.label" default="Title" /></span>
+
+                        <span class="property-value" aria-labelledby="title-label"><g:fieldValue bean="${videoInstance}" field="title"/></span>
+
+                    </li>
+                </g:if>
+
+                <g:if test="${videoInstance?.description}">
+                    <li class="fieldcontain">
+                        <span id="description-label" class="property-label"><g:message code="video.description.label" default="Description" /></span>
+
+                        <span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${videoInstance}" field="description"/></span>
+
+                    </li>
+                </g:if>
+
 				<g:if test="${videoInstance?.country}">
 				<li class="fieldcontain">
 					<span id="country-label" class="property-label"><g:message code="video.country.label" default="Country" /></span>
 					
 						<span class="property-value" aria-labelledby="country-label"><g:fieldValue bean="${videoInstance}" field="country"/></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${videoInstance?.description}">
-				<li class="fieldcontain">
-					<span id="description-label" class="property-label"><g:message code="video.description.label" default="Description" /></span>
-					
-						<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${videoInstance}" field="description"/></span>
 					
 				</li>
 				</g:if>
@@ -55,15 +64,6 @@
 					<span id="postDate-label" class="property-label"><g:message code="video.postDate.label" default="Post Date" /></span>
 					
 						<span class="property-value" aria-labelledby="postDate-label"><g:formatDate date="${videoInstance?.postDate}" /></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${videoInstance?.title}">
-				<li class="fieldcontain">
-					<span id="title-label" class="property-label"><g:message code="video.title.label" default="Title" /></span>
-					
-						<span class="property-value" aria-labelledby="title-label"><g:fieldValue bean="${videoInstance}" field="title"/></span>
 					
 				</li>
 				</g:if>
