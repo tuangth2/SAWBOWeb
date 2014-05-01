@@ -16,11 +16,11 @@ hibernate {
 // environment specific settings
 environments {
     development {
-//        dataSource {
-//            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-//            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
-//        }
         dataSource {
+            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
+            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+        }
+/*        dataSource {
             pooled = true
             dbCreate = "update"
             url = "jdbc:mysql://localhost:8889/SAWBO"
@@ -47,7 +47,7 @@ environments {
                 jdbcInterceptors = "ConnectionState;StatementCache(max=200)"
                 defaultTransactionIsolation = java.sql.Connection.TRANSACTION_READ_COMMITTED
             }
-        }
+        }*/
     }
     test {
         dataSource {
