@@ -4,7 +4,75 @@
         <meta name="layout" content="main"/>
         <title>SAWBO&trade;</title>
         <style type="text/css" media="screen">
-            #status {
+            nav {
+            background-color:#00602C;
+            height:40px;
+            }
+
+
+            nav ul {
+            font-family: "Franklin Gothic", Heavy;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            }
+
+            nav ul li {
+            display: block;
+            position: relative;
+            float: left;
+
+            }
+
+            nav li ul {
+            display: none;
+            }
+
+            nav ul li a {
+            display: block;
+            text-decoration: none;
+            padding: 7px 15px 3px 15px;
+            background: #00602C;
+            color: #ffffff; 
+            margin-left: 1px;
+            white-space: nowrap;
+            height:30px; /* Width and height of top-level nav items */
+            width:90px;
+            text-align:center;
+
+            }
+
+            nav ul li a:hover {
+            background: #99D9B7;
+            }
+
+            nav li:hover ul {
+            display: block;
+            position: absolute;
+            height:30px;
+            }
+
+            nav li:hover li {
+            float: none;
+            font-size: 20px;
+
+            }
+
+            nav li:hover a {
+            background: #66C692;
+            height:30px; /* Height of lower-level nav items is shorter than main level */
+            }
+
+            nav li:hover li a:hover {
+            background: #99D9B7;
+            }
+
+            nav ul li ul li a {
+            text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+            }
+
+            <!--#status {
             background-color: #eee;
             border: .2em solid #fff;
             margin: 2em 2em 1em;
@@ -38,11 +106,12 @@
             text-transform: uppercase;
             font-size: 1.1em;
             margin: 0 0 0.3em;
-            }
+            }-->
 
             #page-body {
             margin: 2em 1em 1.25em 18em;
             }
+            <!--
 
             h2 {
             margin-top: 1em;
@@ -77,12 +146,32 @@
             #page-body h1 {
             margin-top: 0;
             }
-            }
+            }-->
         </style>
     </head>
     <body>
         <a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-        <div id="status" role="complementary">
+        <nav>
+            <ul>
+                <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
+                <li><a class="home" href="${createLink(uri: '/')}">About Us</a> 
+                    <ul>
+                        <li><a class="home" href="${createLink(uri: '/')}">The People</a></li>
+                        <li><a class="home" href="${createLink(uri: '/')}">The Idea</a></li>
+                    </ul>
+                </li>
+                <li><a class="home" href="${createLink(uri: '/')}">Give </a></li>
+                <li><a class="home" href="${createLink(uri: '/')}">Gallery </a>
+                    <ul>
+                        <li><a class="home" href="${createLink(uri: '/')}">Pictures</a></li>
+                        <li><a class="home" href="${createLink(uri: '/video/index')}">Videos</a></li>
+                    </ul>
+                </li>
+                <!--<li><a class="home" href="${createLink(uri: '/')}">Search </a></li>-->
+                <li><a class="home" href="${createLink(uri: '/')}">Help </a></li>
+            </ul>
+        </nav>
+        <!--<div id="status" role="complementary">
             <h1>Application Status</h1>
             <ul>
                 <li>App version: <g:meta name="app.version"/></li>
@@ -101,7 +190,7 @@
                     <li>${plugin.name} - ${plugin.version}</li>
                     </g:each>
             </ul>
-        </div>
+        </div>-->
         <div id="page-body" role="main">
             <h1>This is the Main Page</h1>
             <p>Here we will post any problems we have or any things we need to get done urgently. Below is a list of controllers that are currently deployed in this application,
