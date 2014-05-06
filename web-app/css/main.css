@@ -86,7 +86,31 @@ ul {
 img {
 	border: 0;
 }
-
+.footer caption{
+    font-size: 14pt;
+    margin: 0px;
+    padding: 0px;
+}
+.footer table{
+    background-color: transparent;
+    border-color: transparent;
+    padding: 0px;
+    margin: 0px;
+}
+.footer th{
+    background-color: transparent;
+    font-size: 12pt;
+}
+.footer td{
+    background-color: transparent;
+    font-size: 10pt;
+}
+.footer tr{
+    background-color: transparent;
+}
+.footer th:hover, tr:hover {
+	background-color: transparent;
+}
 /* GENERAL */
 
 #grailsLogo a {
@@ -111,12 +135,41 @@ img {
 	background: #abbf78;
 	color: #000;
 	clear: both;
-	font-size: 0.8em;
+	font-size: 2em;
 	margin-top: 1.5em;
-	padding: 1em;
-	min-height: 1em;
+	padding: 10px;
+	min-height: 200px;
+        text-align: center;
+        vertical-align: middle;
+        
+}
+.footer img{
+    width: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+   
+    position: relative;
+}
+.footer p {
+    font-size: 12pt;
+    
+    
+    left: 20px;
+    
+    
+}
+.TonTop p{
+    position: relative;
+    font-size: 14pt;
+    text-align: left;
 }
 
+#container div{
+    float: left;
+    font-size: 12pt;
+    width: auto;
+    
+}
 .footer a {
 	color: #255b17;
 }
