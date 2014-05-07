@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="layout" content="main"/>
+        <meta name="layout" content="diff_view"/>
         <title>SAWBO&trade;</title>
         <style type="text/css" media="screen">
             nav {
@@ -150,7 +150,6 @@
         </style>
     </head>
     <body>
-        <a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
         <nav>
             <ul>
                 <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
