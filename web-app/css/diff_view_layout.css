@@ -276,7 +276,7 @@ img {
   border-right: 1px solid #b2c58b;
 }
 #cssmenu li:hover {
-  background: #9cb369 url(pattern.png) top left repeat;
+  background: #9cb369;
 }
 #cssmenu li:first-child {
   border-left: none;
