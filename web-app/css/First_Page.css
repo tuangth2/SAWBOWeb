@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 15, 2014, 9:55:41 AM
+    Author     : Duncan Baird
+*/
+p.leftTop {font: 20px "League Gothic"; color: #00A04A; text-align: left; text-transform: uppercase; margin: 0px;}
+p.rightBottom { font: bold 50px "Franklin Gothic", Heavy ; color: #00A04A; text-transform: uppercase; position: absolute; bottom: 0;right: 0; margin: 0;}
+div.centered { text-align: center; padding:0px; width: 95%; margin-right: 10px; position: absolute; bottom: 45%; }
+div.centeredText1 { text-align: center; position: absolute; left: 57%; width: 120px; padding-left: 5px; padding-right: 5px;}
+div.centeredText2 { text-align: center; position: absolute; left: 45%; width: 120px; padding-left: 5px; padding-right: 5px;}
+div.centeredText3 { text-align: center; position: absolute; left: 33%; width: 120px; padding-left: 5px; padding-right: 5px;}
+div.underim { width: 95%; position: absolute; bottom: 25% }
+img.padded { width: 120px; }
+pre.padded {  padding-left: 10px; padding-right: 10px;}
+pre.overlight {font: bold 14px "Franklin Gothic", Heavy ; color: #00A04A; }
+img.globe { width: 200px;  position: absolute; bottom: 55%; left: 40%;}
+div.dot1 { position: absolute; left: 57%; width: 120px; padding-left: 5px; padding-right: 5px;}
+div.dot2 { position: absolute; left: 45%; width: 120px; padding-left: 5px; padding-right: 5px;}
+div.dot3 { position: absolute; left: 33%; width: 120px; padding-left: 5px; padding-right: 5px;}
